@@ -1,13 +1,73 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="forst angular thing" />
+  <meta name="author" content="Anshul Gupta" />
   <title>ResumeAnshulAngular</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+   <!-- Font Awesome icons (free version)-->
+   <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+   <!-- Google fonts-->
+   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <style> 
+    #loader {
+             border: 16px solid #f3f3f3;
+             border-radius: 50%;
+             border-top: 16px solid #bd5d38;
+             width: 100px;
+             height: 100px;
+             -webkit-animation: spin 2s linear infinite; /* Safari */
+             animation: spin 2s linear infinite;
+     }
+
+     /* Safari */
+     @-webkit-keyframes spin {
+         0% { -webkit-transform: rotate(0deg); }
+         100% { -webkit-transform: rotate(360deg); }
+     }
+       
+     @keyframes spin {
+         0% { transform: rotate(0deg); }
+         100% { transform: rotate(360deg); }
+     }
+       
+     .center1 { 
+         position: absolute; 
+         top: 0; 
+         bottom: 0; 
+         left: 0; 
+         right: 0; 
+         margin: auto; 
+     } 
+ </style> 
+
+ <!--SCRIPT FOR LOADING-->
+ <script> 
+     document.onreadystatechange = function() { 
+         if (document.readyState !== "complete") { 
+             document.getElementById('contents').style.visibility="hidden"; 
+             document.getElementById('loader').style.visibility="visible";
+         } else { 
+             document.getElementById('contents').style.visibility="visible"; 
+             document.getElementById('loader').style.visibility="hidden";
+         } 
+     }; 
+ </script> 
+
+
 </head>
 <body>
-  <app-root></app-root>
+  <div id="loader" class="center1"></div>
+  <div id="contents">
+    <app-root></app-root>
+  </div>
+
 </body>
 </html>
