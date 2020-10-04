@@ -10121,6 +10121,12 @@
       padding-bottom: 3rem;
     }
   }
+
+  @media(max-width:576){
+    .btn-primary{
+      margin-top: 20px;
+    }
+  }
   
   html{
     scroll-behavior: smooth;
@@ -10135,4 +10141,21 @@
     font-weight: 700;
     color: #343a40;
     font-size: 1.5rem
+  }
+
+  td{
+    padding-bottom: 10px
+  }
+
+  .topic{
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    color: #343a40;
+    font-size: 1.2rem
+  }
+
+  @media (max-width: 622px){
+    .btn-primary{
+      margin-top: 15px;
+    }
   }
